@@ -10,6 +10,7 @@ int main(){
     cout << " Masukkan status kependudukan anda : \n\n";
     cout << " Berapa usia anda ? \n";
     cout << " 1. Dibawah 17 tahun   2. Diatas 17 tahun        3. Lansia \n";
+    cout << " Masukan pilihan : ";
     cin >> usia;
     if (usia==1){
         cout << " Anda tidak berhak mendapatkan bantuan langsung desa \n";
@@ -18,10 +19,12 @@ int main(){
     else if (usia==2){
             cout << " Apakah anda sudah menikah ? \n";
             cout << " 1. Belum      2. Sudah \n";
+            cout << " Masukan pilihan : ";
             cin >> status;
         if (status==1){
             cout << " Apakah anda sudah bekerja ? \n";
             cout << " 1. Belum      2. Sudah \n";
+            cout << " Masukan pilihan : ";
             cin >> kerja;
                 if (kerja==2){
                     cout << " Anda tidak berhak mendapatkan bantuan langsung desa \n";
@@ -37,6 +40,7 @@ int main(){
         else if (status==2){
             cout << " Apakah anda sudah bekerja ? \n";
             cout << " 1. Belum      2. Sudah \n";
+            cout << " Masukan pilihan : ";
             cin >> kerja;
                 if (kerja==1){
                     cout << " Anda tidak berhak mendapatkan bantuan langsung desa \n";
@@ -44,6 +48,7 @@ int main(){
                 else if (kerja==2){
                     cout << " Apakah anda mempunyai minimal 3 tanggungan ? \n";
                     cout << " 1. Tidak      2. Ya  \n";
+                    cout << " Masukan pilihan : ";
                     cin >> tanggungan;
                         if (tanggungan==1){
                             cout << " Anda tidak berhak mendapatkan bantuan langsung desa \n";
@@ -68,13 +73,3 @@ int main(){
     }
     return 0;
 }
-
-
-
-
-
-
-
-
-
-    
